@@ -1,0 +1,96 @@
+titulo: Inicio - Clínica Dental Dharma
+descripcion: Trabajamos sobre tu salud bucal sin dejar a un lado los aspectos de tu salud general, los aspectos psicológicos y los de tu entorno.
+bloques:
+  portada:
+    titulo: sonrisas conscientes
+  texto_1:
+    texto: |
+      **La atención odontológica \
+      que va más allá de tu boca \
+      abrazando \
+      la totalidad de tu ser**
+    alineacion: centro
+  imagen_1:
+    imagen: /wp-content/uploads/2025/01/dharma-9-scaled.jpg
+    alt: ''
+  texto_2:
+    texto: |
+      CONÓCENOS
+    alineacion: izquierda
+  texto_3:
+    texto: |
+      **Bievenid@ a Dharma**
+  texto_4:
+    texto: |
+      ***El enfoque Holístico de la Odontología***
+  texto_5:
+    texto: |
+      **¿Qué significa eso?** Significa que miramos a la persona en su totalidad, no sólo a tus dientes. Esto nos permite brindar atención individualizada y concentrarnos en solucionar el problema dental de forma permanente. Comenzamos con una evalución integral de la salud de cada paciente.
+
+      Nuestro objetivo es optimizar la salud a través de los sercicios odontológicos, prevenir tratamientos innecesarios y relacionar la salud de todo el ser con la boca..
+  texto_6:
+    texto: |
+      **Cada tratamiento es un diálogo con tu cuerpo. Escuchamos lo que necesitas, sin excesos ni sobretratamientos.**
+    alineacion: centro
+  texto_7:
+    texto: |
+      TRATAMIENTOS
+    alineacion: centro
+  texto_8:
+    texto: |
+      **Qué te ofrecemos**
+    alineacion: centro
+  texto_9:
+    texto: |
+      **Dentosofía**
+    alineacion: centro
+  texto_10:
+    texto: |
+      **Holística**
+    alineacion: centro
+  texto_11:
+    texto: |
+      **Coaching**
+    alineacion: centro
+  texto_12:
+    texto: |
+      **Infantil**
+    alineacion: centro
+  texto_13:
+    texto: |
+      **Encías**
+    alineacion: centro
+  texto_14:
+    texto: |
+      **Implantes**
+    alineacion: centro
+  boton_1:
+    texto: conoce todos nuestros servicios
+    enlace: /tratamientos/
+  texto_15:
+    texto: |
+      ## Tratamientos personalizados para sonrisas únicas
+    alineacion: izquierda
+  boton_2:
+    texto: Ver todos
+    enlace: /tratamientos/
+  imagen_2:
+    imagen: /wp-content/uploads/2024/03/Clinica-Dental-Dharma-Alfonso.jpeg
+    alt: Retrato del Dr. Simo y una frase escrita que pregunta ¿Qué dice nuestra boca de nuestras emociones?
+  texto_16:
+    texto: |
+      **NUESTRO EQUIPO**
+    alineacion: izquierda
+  texto_17:
+    texto: |
+      ## **Conócenos**
+  texto_18:
+    texto: |
+      Somos un centro de odontología holística donde llevamos más de 25 años tratando la boca y sus dolencias con una visión diferente. Esta visión integral adopta un enfoque holístico que reconoce la interconexión entre todos los aspectos del ser humano: físico, emocional, mental y espiritual. Se enfoca en promover la salud y el bienestar en su totalidad, no solo tratando los síntomas físicos, sino también abordando las causas subyacentes y fomentando un estado de equilibrio y armonía en todas las áreas de la vida.
+  boton_3:
+    texto: EQUIPO
+    enlace: https://calendly.com/clinicadentaldharma/consulta?month=2024-03
+  texto_19:
+    texto: |
+      **¡Tu sonrisa sin preocupaciones, solo usamos materiales biocompatibles  y anestesia libre de tóxicos!**
+    alineacion: centro

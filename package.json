@@ -1,0 +1,14 @@
+{
+  "name": "clinicadentaldharma",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "7.3.4",
+    "marked": "18.0.13"
+  }
+}

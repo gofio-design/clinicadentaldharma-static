@@ -1,0 +1,43 @@
+titulo: Rehabilitación Holística - Clínica Dental Dharma
+descripcion: Colocamos implantes dentales y rehabilitamos tu boca teniendo en cuenta tu postura anatómica y la relación con la articulación temporo-mandibular.
+bloques:
+  imagen_1:
+    imagen: /wp-content/uploads/2025/01/pexels-cottonbro-studio-6502041-scaled.jpg
+    alt: ''
+  texto_1:
+    texto: |
+      ## Rehabilitación Holística
+  texto_2:
+    texto: |
+      En Clínica Dental Dharma nos especializamos en la colocación de implantes dentales, con un enfoque particular en los implantes de zirconio, que ofrecen una estética superior y una biocompatibilidad excepcional.
+
+      Nuestra misión es rehabilitar tu boca considerando tu postura anatómica y la relación con la articulación temporo-mandibular. La rehabilitación oral es esencial en la odontología, ya que busca restaurar la función y la armonía estética a través de prótesis e implantes dentales, especialmente en casos de pérdida de dientes.
+
+      Adoptamos un enfoque holístico que nos permite abordar las rehabilitaciones orales de manera integral, prestando especial atención a tu bienestar general. Buscamos siempre la mejor oclusión, lo que nos ayuda a resolver cualquier problema de salud que pueda surgir de una mala alineación dental.
+
+      En nuestra clínica, cada sonrisa es única, y por ello, realizamos un análisis detallado de tu salud bucal y necesidades específicas, asegurando que cada tratamiento sea personalizado y eficaz. Nuestro compromiso es ofrecerte un servicio de alta calidad, donde la tecnología de vanguardia y nuestra experiencia se combinan para proporcionarte resultados excepcionales y duraderos.
+  texto_3:
+    texto: |
+      ## Rehabilitación dental holística y libre de metales
+  texto_4:
+    texto: |
+      En todos nuestros tratamientos de rehabilitación oral utilizamos:
+  tarjeta_1:
+    titulo: Implantes sin metal
+    texto: |
+      Para no producir corrientes galvánicas debidas a los metales utilizamos implantes de zirconio.
+  tarjeta_2:
+    titulo: Test kinesiológico
+    texto: |
+      Testamos los materiales idóneos para tí, porque cada paciente es único y así podemos determinar los más idóneos en cada caso.
+  tarjeta_3:
+    titulo: Prótesis libres de monómeros
+    texto: |
+      Colocamos prótesis diseñadas a partir de tu función articular, fabricadas con resinas libres de monómeros, evitando así materiales tóxicos.
+  tarjeta_4:
+    titulo: Cirugías alternativas
+    texto: |
+      Trabajamos con técnicas mínimamente invasivas: láser dental, ozono y ultrasonido, para evitar cirugías traumáticas.
+  imagen_2:
+    imagen: /wp-content/uploads/2024/03/Prueba-Dharma.jpg
+    alt: ''

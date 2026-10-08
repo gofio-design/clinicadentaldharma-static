@@ -1,0 +1,19 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import { renderPagina } from '../lib/render';
+
+export async function getStaticPaths() {
+  const paginas = await getCollection('paginas');
+  return paginas.map((pagina) => ({
+    params: { slug: pagina.id === 'inicio' ? undefined : pagina.id },
+    props: { pagina },
+  }));
+}
+
+const { pagina } = Astro.props;
+const clinica = await getEntry('ajustes', 'clinica');
+if (!clinica) throw new Error('Falta src/content/ajustes/clinica.yml');
+const html = renderPagina(pagina.id, pagina.data, clinica.data);
+---
+
+<Fragment set:html={html} />

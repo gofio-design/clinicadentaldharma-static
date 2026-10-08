@@ -1,0 +1,137 @@
+titulo: Tratamientos - Clínica Dental Dharma
+descripcion: Trabajamos sobre la salud bucal del paciente sin dejar a un lado los aspectos de su salud general, los aspectos psicológicos y los ambientales.
+bloques:
+  texto_1:
+    texto: |
+      **TRATAMIENTOS**
+    alineacion: centro
+  texto_2:
+    texto: |
+      ## **Descubre qué te podemos ofrecer**
+    alineacion: centro
+  imagen_1:
+    imagen: /wp-content/uploads/2025/01/pexels-tara-winstead-6690851-scaled.jpg
+    alt: ''
+  texto_3:
+    texto: |
+      #### **Odontología Holística**
+    alineacion: centro
+  texto_4:
+    texto: |
+      Trabajamos sobre la salud bucal del paciente sin dejar a un lado los aspectos de su salud general, los aspectos psicológicos y los ambientales.
+    alineacion: centro
+  boton_1:
+    texto: Descrubre más
+    enlace: /odontologia_holistica/
+  imagen_2:
+    imagen: /wp-content/uploads/2025/01/istockphoto-1436132531-612x612-1.jpeg
+    alt: ''
+  texto_5:
+    texto: |
+      #### **Dentosofía**
+    alineacion: centro
+  texto_6:
+    texto: |
+      Una visión holística y evolutiva de la ortodoncia y el tratamiento de la oclusión dental que consigue posicionar los dientes de forma consciente e indolora.
+    alineacion: centro
+  boton_2:
+    texto: Descrubre más
+    enlace: https://clinicadentaldharma.com/wp-admin/post.php?post=112&action=edit
+  imagen_3:
+    imagen: /wp-content/uploads/2024/03/Prueba-Dharma.jpg
+    alt: ''
+  texto_7:
+    texto: |
+      #### **Extracción de Amalgamas**
+    alineacion: centro
+  texto_8:
+    texto: |
+      Expertos en la extracción segura de amalgamas de mercurio. Utilizamos un protocolo que protege al paciente y al odontólogo de la inhalación tóxica de gases.
+    alineacion: centro
+  boton_3:
+    texto: Descrubre más
+    enlace: /extraccion-de-amalgamas/
+  imagen_4:
+    imagen: /wp-content/uploads/2025/01/pexels-cottonbro-studio-6501853-scaled.jpg
+    alt: ''
+  texto_9:
+    texto: |
+      #### **Rehabilitación Holística**
+    alineacion: centro
+  texto_10:
+    texto: |
+      En Clínica Dental Dharma colocamos los implantes y rehabilitamos la boca teniendo en cuenta la postura anatómica del paciente y su relación con la articulación temporo-mandibular
+    alineacion: centro
+  boton_4:
+    texto: Descrubre más
+    enlace: /rehabilitacion-holistica/
+  imagen_5:
+    imagen: /wp-content/uploads/2025/01/pexels-oleksandr-p-12969391-scaled.jpg
+    alt: ''
+  texto_11:
+    texto: |
+      #### **Odontopediatría**
+    alineacion: centro
+  texto_12:
+    texto: |
+      Trabajamos con odontopediatras especializados para adaptar progresivamente a los niños a la consulta dental.
+    alineacion: centro
+  boton_5:
+    texto: Descrubre más
+    enlace: /odontopediatria/
+  imagen_6:
+    imagen: /wp-content/uploads/2025/01/pexels-karolina-grabowska-6627527-scaled.jpg
+    alt: ''
+  texto_13:
+    texto: |
+      #### **Terapía Gingival**
+    alineacion: centro
+  texto_14:
+    texto: |
+      Combinamos los tratamientos tradicionales de las encías con métodos complementarios que incluyen entre otras la revisión de la dieta, suplementos nutricionales, técnicas de relajación para reducir el estrés, y terapias alternativas como la acupuntura o la aromaterapia.
+    alineacion: centro
+  boton_6:
+    texto: Descrubre más
+    enlace: /terapia-gingival/
+  imagen_7:
+    imagen: /wp-content/uploads/2025/01/pexels-shvets-production-9775432-scaled.jpg
+    alt: ''
+  texto_15:
+    texto: |
+      #### **Estudio de la oclusión dental**
+    alineacion: centro
+  texto_16:
+    texto: |
+      Realizamos un estudio postural para asegurar un buen encaje entre los dientes superiores e inferiores, así como una buena posición postural.
+    alineacion: centro
+  boton_7:
+    texto: Descrubre más
+    enlace: /estudio-de-la-oclusion-dental/
+  imagen_8:
+    imagen: /wp-content/uploads/2024/03/dharma-16Dharma_17.1.jpg
+    alt: Retrato de una mujer joven sonriendo
+  texto_17:
+    texto: |
+      #### **Diseño de Sonrisas**
+    alineacion: centro
+  texto_18:
+    texto: |
+      El diseño de sonrisas es un estudio de la armonía facial para conseguir una sonrisa más natural, basada en un estudio osteopático de las líneas maestras de la composición facial.
+    alineacion: centro
+  boton_8:
+    texto: Descrubre más
+    enlace: /diseno-de-sonrisas-conscientes/
+  imagen_9:
+    imagen: /wp-content/uploads/2025/01/pexels-pavel-danilyuk-7220888-scaled.jpg
+    alt: ''
+  texto_19:
+    texto: |
+      #### **Coaching Dental Holístico**
+    alineacion: centro
+  texto_20:
+    texto: |
+      Nuestras sesiones de Coaching Dental están diseñadas para ayudarte en tu camino hacia un bienestar integral, abordando no solo tus inquietudes bucodentales sino también tus objetivos de salud más amplios.
+    alineacion: centro
+  boton_9:
+    texto: Descrubre más
+    enlace: /coaching-dental-holistico/

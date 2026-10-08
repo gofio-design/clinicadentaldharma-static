@@ -1,0 +1,2811 @@
+# Configuración del editor (Sveltia CMS). Los campos de cada página corresponden a las
+# marcas {{...}} de src/plantillas/<página>.html.
+backend:
+  name: github
+  repo: gofio-design/clinicadentaldharma-static
+  branch: main
+site_url: https://gofio-design.github.io/clinicadentaldharma-static/
+app_title: Clínica Dental Dharma
+media_folder: public/wp-content/uploads
+public_folder: /wp-content/uploads
+collections:
+- name: paginas
+  label: Páginas
+  icon: description
+  files:
+  - name: inicio
+    label: Inicio
+    file: src/content/paginas/inicio.yml
+    fields:
+    - name: titulo
+      label: Título de la página (pestaña del navegador y Google)
+      widget: string
+    - name: descripcion
+      label: Descripción para Google y redes sociales
+      widget: text
+    - name: bloques
+      label: Contenido (en el orden en que aparece en la página)
+      widget: object
+      fields:
+      - name: portada
+        label: Portada
+        widget: object
+        fields:
+        - name: titulo
+          label: Título sobre el vídeo
+          widget: string
+      - name: texto_1
+        label: Texto 1 · La atención odontológica que va más allá de tu b…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: imagen_1
+        label: Imagen 1 · dharma-9-scaled.jpg
+        widget: object
+        collapsed: true
+        fields:
+        - name: imagen
+          label: Imagen
+          widget: image
+        - name: alt
+          label: Texto alternativo (describe la imagen; vacío si es decorativa)
+          widget: string
+          required: false
+      - name: texto_2
+        label: Texto 2 · CONÓCENOS
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_3
+        label: Texto 3 · Bievenid@ a Dharma
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_4
+        label: Texto 4 · El enfoque Holístico de la Odontología
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_5
+        label: Texto 5 · ¿Qué significa eso? Significa que miramos a la p…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_6
+        label: Texto 6 · Cada tratamiento es un diálogo con tu cuerpo. Es…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_7
+        label: Texto 7 · TRATAMIENTOS
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_8
+        label: Texto 8 · Qué te ofrecemos
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_9
+        label: Texto 9 · Dentosofía
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_10
+        label: Texto 10 · Holística
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_11
+        label: Texto 11 · Coaching
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_12
+        label: Texto 12 · Infantil
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_13
+        label: Texto 13 · Encías
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_14
+        label: Texto 14 · Implantes
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: boton_1
+        label: Botón 1 · conoce todos nuestros servicios
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto del botón
+          widget: string
+        - name: enlace
+          label: Enlace (p. ej. /tratamientos/ o https://…)
+          widget: string
+      - name: texto_15
+        label: Texto 15 · Tratamientos personalizados para sonrisas únicas
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: boton_2
+        label: Botón 2 · Ver todos
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto del botón
+          widget: string
+        - name: enlace
+          label: Enlace (p. ej. /tratamientos/ o https://…)
+          widget: string
+      - name: imagen_2
+        label: Imagen 2 · Clinica-Dental-Dharma-Alfonso.jpeg
+        widget: object
+        collapsed: true
+        fields:
+        - name: imagen
+          label: Imagen
+          widget: image
+        - name: alt
+          label: Texto alternativo (describe la imagen; vacío si es decorativa)
+          widget: string
+          required: false
+      - name: texto_16
+        label: Texto 16 · NUESTRO EQUIPO
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_17
+        label: Texto 17 · Conócenos
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_18
+        label: Texto 18 · Somos un centro de odontología holística donde l…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: boton_3
+        label: Botón 3 · EQUIPO
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto del botón
+          widget: string
+        - name: enlace
+          label: Enlace (p. ej. /tratamientos/ o https://…)
+          widget: string
+      - name: texto_19
+        label: Texto 19 · ¡Tu sonrisa sin preocupaciones, solo usamos mate…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+  - name: tratamientos
+    label: Tratamientos
+    file: src/content/paginas/tratamientos.yml
+    fields:
+    - name: titulo
+      label: Título de la página (pestaña del navegador y Google)
+      widget: string
+    - name: descripcion
+      label: Descripción para Google y redes sociales
+      widget: text
+    - name: bloques
+      label: Contenido (en el orden en que aparece en la página)
+      widget: object
+      fields:
+      - name: texto_1
+        label: Texto 1 · TRATAMIENTOS
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_2
+        label: Texto 2 · Descubre qué te podemos ofrecer
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: imagen_1
+        label: Imagen 1 · pexels-tara-winstead-6690851-scaled.jpg
+        widget: object
+        collapsed: true
+        fields:
+        - name: imagen
+          label: Imagen
+          widget: image
+        - name: alt
+          label: Texto alternativo (describe la imagen; vacío si es decorativa)
+          widget: string
+          required: false
+      - name: texto_3
+        label: Texto 3 · Odontología Holística
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_4
+        label: Texto 4 · Trabajamos sobre la salud bucal del paciente sin…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: boton_1
+        label: Botón 1 · Descrubre más
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto del botón
+          widget: string
+        - name: enlace
+          label: Enlace (p. ej. /tratamientos/ o https://…)
+          widget: string
+      - name: imagen_2
+        label: Imagen 2 · istockphoto-1436132531-612x612-1.jpeg
+        widget: object
+        collapsed: true
+        fields:
+        - name: imagen
+          label: Imagen
+          widget: image
+        - name: alt
+          label: Texto alternativo (describe la imagen; vacío si es decorativa)
+          widget: string
+          required: false
+      - name: texto_5
+        label: Texto 5 · Dentosofía
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_6
+        label: Texto 6 · Una visión holística y evolutiva de la ortodonci…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: boton_2
+        label: Botón 2 · Descrubre más
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto del botón
+          widget: string
+        - name: enlace
+          label: Enlace (p. ej. /tratamientos/ o https://…)
+          widget: string
+      - name: imagen_3
+        label: Imagen 3 · Prueba-Dharma.jpg
+        widget: object
+        collapsed: true
+        fields:
+        - name: imagen
+          label: Imagen
+          widget: image
+        - name: alt
+          label: Texto alternativo (describe la imagen; vacío si es decorativa)
+          widget: string
+          required: false
+      - name: texto_7
+        label: Texto 7 · Extracción de Amalgamas
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_8
+        label: Texto 8 · Expertos en la extracción segura de amalgamas de…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: boton_3
+        label: Botón 3 · Descrubre más
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto del botón
+          widget: string
+        - name: enlace
+          label: Enlace (p. ej. /tratamientos/ o https://…)
+          widget: string
+      - name: imagen_4
+        label: Imagen 4 · pexels-cottonbro-studio-6501853-scaled.jpg
+        widget: object
+        collapsed: true
+        fields:
+        - name: imagen
+          label: Imagen
+          widget: image
+        - name: alt
+          label: Texto alternativo (describe la imagen; vacío si es decorativa)
+          widget: string
+          required: false
+      - name: texto_9
+        label: Texto 9 · Rehabilitación Holística
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_10
+        label: Texto 10 · En Clínica Dental Dharma colocamos los implantes…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: boton_4
+        label: Botón 4 · Descrubre más
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto del botón
+          widget: string
+        - name: enlace
+          label: Enlace (p. ej. /tratamientos/ o https://…)
+          widget: string
+      - name: imagen_5
+        label: Imagen 5 · pexels-oleksandr-p-12969391-scaled.jpg
+        widget: object
+        collapsed: true
+        fields:
+        - name: imagen
+          label: Imagen
+          widget: image
+        - name: alt
+          label: Texto alternativo (describe la imagen; vacío si es decorativa)
+          widget: string
+          required: false
+      - name: texto_11
+        label: Texto 11 · Odontopediatría
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_12
+        label: Texto 12 · Trabajamos con odontopediatras especializados pa…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: boton_5
+        label: Botón 5 · Descrubre más
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto del botón
+          widget: string
+        - name: enlace
+          label: Enlace (p. ej. /tratamientos/ o https://…)
+          widget: string
+      - name: imagen_6
+        label: Imagen 6 · pexels-karolina-grabowska-6627527-scaled.jpg
+        widget: object
+        collapsed: true
+        fields:
+        - name: imagen
+          label: Imagen
+          widget: image
+        - name: alt
+          label: Texto alternativo (describe la imagen; vacío si es decorativa)
+          widget: string
+          required: false
+      - name: texto_13
+        label: Texto 13 · Terapía Gingival
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_14
+        label: Texto 14 · Combinamos los tratamientos tradicionales de las…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: boton_6
+        label: Botón 6 · Descrubre más
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto del botón
+          widget: string
+        - name: enlace
+          label: Enlace (p. ej. /tratamientos/ o https://…)
+          widget: string
+      - name: imagen_7
+        label: Imagen 7 · pexels-shvets-production-9775432-scaled.jpg
+        widget: object
+        collapsed: true
+        fields:
+        - name: imagen
+          label: Imagen
+          widget: image
+        - name: alt
+          label: Texto alternativo (describe la imagen; vacío si es decorativa)
+          widget: string
+          required: false
+      - name: texto_15
+        label: Texto 15 · Estudio de la oclusión dental
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_16
+        label: Texto 16 · Realizamos un estudio postural para asegurar un …
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: boton_7
+        label: Botón 7 · Descrubre más
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto del botón
+          widget: string
+        - name: enlace
+          label: Enlace (p. ej. /tratamientos/ o https://…)
+          widget: string
+      - name: imagen_8
+        label: Imagen 8 · dharma-16Dharma_17.1.jpg
+        widget: object
+        collapsed: true
+        fields:
+        - name: imagen
+          label: Imagen
+          widget: image
+        - name: alt
+          label: Texto alternativo (describe la imagen; vacío si es decorativa)
+          widget: string
+          required: false
+      - name: texto_17
+        label: Texto 17 · Diseño de Sonrisas
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_18
+        label: Texto 18 · El diseño de sonrisas es un estudio de la armoní…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: boton_8
+        label: Botón 8 · Descrubre más
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto del botón
+          widget: string
+        - name: enlace
+          label: Enlace (p. ej. /tratamientos/ o https://…)
+          widget: string
+      - name: imagen_9
+        label: Imagen 9 · pexels-pavel-danilyuk-7220888-scaled.jpg
+        widget: object
+        collapsed: true
+        fields:
+        - name: imagen
+          label: Imagen
+          widget: image
+        - name: alt
+          label: Texto alternativo (describe la imagen; vacío si es decorativa)
+          widget: string
+          required: false
+      - name: texto_19
+        label: Texto 19 · Coaching Dental Holístico
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_20
+        label: Texto 20 · Nuestras sesiones de Coaching Dental están diseñ…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: boton_9
+        label: Botón 9 · Descrubre más
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto del botón
+          widget: string
+        - name: enlace
+          label: Enlace (p. ej. /tratamientos/ o https://…)
+          widget: string
+  - name: odontologia_holistica
+    label: Odontología Holística
+    file: src/content/paginas/odontologia_holistica.yml
+    fields:
+    - name: titulo
+      label: Título de la página (pestaña del navegador y Google)
+      widget: string
+    - name: descripcion
+      label: Descripción para Google y redes sociales
+      widget: text
+    - name: bloques
+      label: Contenido (en el orden en que aparece en la página)
+      widget: object
+      fields:
+      - name: imagen_1
+        label: Imagen 1 · pexels-cristian-rojas-8391374-scaled.jpg
+        widget: object
+        collapsed: true
+        fields:
+        - name: imagen
+          label: Imagen
+          widget: image
+        - name: alt
+          label: Texto alternativo (describe la imagen; vacío si es decorativa)
+          widget: string
+          required: false
+      - name: texto_1
+        label: Texto 1 · Odontología Holística
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_2
+        label: Texto 2 · Trabajamos sobre tu salud bucal sin dejar a un l…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_3
+        label: 'Texto 3 · Odontología Holística: Se reconoce que las emoci…'
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_4
+        label: Texto 4 · Trabajamos de una manera más integral, menos inv…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: imagen_2
+        label: Imagen 2 · pexels-jin-h-4215123-scaled.jpg
+        widget: object
+        collapsed: true
+        fields:
+        - name: imagen
+          label: Imagen
+          widget: image
+        - name: alt
+          label: Texto alternativo (describe la imagen; vacío si es decorativa)
+          widget: string
+          required: false
+      - name: texto_5
+        label: Texto 5 · Solo utilizamos materiales biocompatibles libres…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+  - name: dentosofia
+    label: Dentosofía
+    file: src/content/paginas/dentosofia.yml
+    fields:
+    - name: titulo
+      label: Título de la página (pestaña del navegador y Google)
+      widget: string
+    - name: descripcion
+      label: Descripción para Google y redes sociales
+      widget: text
+    - name: bloques
+      label: Contenido (en el orden en que aparece en la página)
+      widget: object
+      fields:
+      - name: imagen_1
+        label: Imagen 1 · istockphoto-1436132531-612x612-1.jpeg
+        widget: object
+        collapsed: true
+        fields:
+        - name: imagen
+          label: Imagen
+          widget: image
+        - name: alt
+          label: Texto alternativo (describe la imagen; vacío si es decorativa)
+          widget: string
+          required: false
+      - name: texto_1
+        label: Texto 1 · Dentosofía
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_2
+        label: Texto 2 · Una [visión holística](/odontologiaholistica/) y…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_3
+        label: Texto 3 · Beneficios
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_4
+        label: Texto 4 · Evita extracciones innecesarias con esta alterna…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: imagen_2
+        label: Imagen 2 · pexels-shvets-production-9775432-scaled.jpg
+        widget: object
+        collapsed: true
+        fields:
+        - name: imagen
+          label: Imagen
+          widget: image
+        - name: alt
+          label: Texto alternativo (describe la imagen; vacío si es decorativa)
+          widget: string
+          required: false
+      - name: texto_5
+        label: Texto 5 · La Dentosofía fomenta una conexión profunda entr…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+  - name: extraccion-de-amalgamas
+    label: Extracción de Amalgamas
+    file: src/content/paginas/extraccion-de-amalgamas.yml
+    fields:
+    - name: titulo
+      label: Título de la página (pestaña del navegador y Google)
+      widget: string
+    - name: descripcion
+      label: Descripción para Google y redes sociales
+      widget: text
+    - name: bloques
+      label: Contenido (en el orden en que aparece en la página)
+      widget: object
+      fields:
+      - name: imagen_1
+        label: Imagen 1 · pexels-ella-wei-8268002-scaled.jpg
+        widget: object
+        collapsed: true
+        fields:
+        - name: imagen
+          label: Imagen
+          widget: image
+        - name: alt
+          label: Texto alternativo (describe la imagen; vacío si es decorativa)
+          widget: string
+          required: false
+      - name: texto_1
+        label: Texto 1 · Extracción de Amalgamas
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_2
+        label: Texto 2 · En Clínica Dental Dharma entendemos que la extra…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_3
+        label: Texto 3 · Extracción Segura de Amalgamas
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_4
+        label: Texto 4 · El protocolo recomendado por la IAOMT (Internati…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_5
+        label: Texto 5 · Medicación
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_6
+        label: Texto 6 · La medicación una vez extraída la amalgama depen…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+  - name: rehabilitacion-holistica
+    label: Rehabilitación Holística
+    file: src/content/paginas/rehabilitacion-holistica.yml
+    fields:
+    - name: titulo
+      label: Título de la página (pestaña del navegador y Google)
+      widget: string
+    - name: descripcion
+      label: Descripción para Google y redes sociales
+      widget: text
+    - name: bloques
+      label: Contenido (en el orden en que aparece en la página)
+      widget: object
+      fields:
+      - name: imagen_1
+        label: Imagen 1 · pexels-cottonbro-studio-6502041-scaled.jpg
+        widget: object
+        collapsed: true
+        fields:
+        - name: imagen
+          label: Imagen
+          widget: image
+        - name: alt
+          label: Texto alternativo (describe la imagen; vacío si es decorativa)
+          widget: string
+          required: false
+      - name: texto_1
+        label: Texto 1 · Rehabilitación Holística
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_2
+        label: Texto 2 · En Clínica Dental Dharma nos especializamos en l…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_3
+        label: Texto 3 · Rehabilitación dental holística y libre de metal…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_4
+        label: Texto 4 · En todos nuestros tratamientos de rehabilitación…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: tarjeta_1
+        label: Tarjeta 1 · Implantes sin metal
+        widget: object
+        collapsed: true
+        fields:
+        - name: titulo
+          label: Título
+          widget: string
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+      - name: tarjeta_2
+        label: Tarjeta 2 · Test kinesiológico
+        widget: object
+        collapsed: true
+        fields:
+        - name: titulo
+          label: Título
+          widget: string
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+      - name: tarjeta_3
+        label: Tarjeta 3 · Prótesis libres de monómeros
+        widget: object
+        collapsed: true
+        fields:
+        - name: titulo
+          label: Título
+          widget: string
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+      - name: tarjeta_4
+        label: Tarjeta 4 · Cirugías alternativas
+        widget: object
+        collapsed: true
+        fields:
+        - name: titulo
+          label: Título
+          widget: string
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+      - name: imagen_2
+        label: Imagen 2 · Prueba-Dharma.jpg
+        widget: object
+        collapsed: true
+        fields:
+        - name: imagen
+          label: Imagen
+          widget: image
+        - name: alt
+          label: Texto alternativo (describe la imagen; vacío si es decorativa)
+          widget: string
+          required: false
+  - name: odontopediatria
+    label: Odontopediatría
+    file: src/content/paginas/odontopediatria.yml
+    fields:
+    - name: titulo
+      label: Título de la página (pestaña del navegador y Google)
+      widget: string
+    - name: descripcion
+      label: Descripción para Google y redes sociales
+      widget: text
+    - name: bloques
+      label: Contenido (en el orden en que aparece en la página)
+      widget: object
+      fields:
+      - name: imagen_1
+        label: Imagen 1 · pexels-nappy-1068205.jpg
+        widget: object
+        collapsed: true
+        fields:
+        - name: imagen
+          label: Imagen
+          widget: image
+        - name: alt
+          label: Texto alternativo (describe la imagen; vacío si es decorativa)
+          widget: string
+          required: false
+      - name: texto_1
+        label: Texto 1 · Odontopediatría
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_2
+        label: Texto 2 · En Clínica Dental Dharma, contamos con un equipo…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_3
+        label: Texto 3 · Tener un enfoque a nivel preventivo desde la pri…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_4
+        label: Texto 4 · Damos prioridad a la prevención, enseñando al ni…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: imagen_2
+        label: Imagen 2 · dharma-16Dharma_16.1.jpg
+        widget: object
+        collapsed: true
+        fields:
+        - name: imagen
+          label: Imagen
+          widget: image
+        - name: alt
+          label: Texto alternativo (describe la imagen; vacío si es decorativa)
+          widget: string
+          required: false
+  - name: terapia-gingival
+    label: Terapia Gingival
+    file: src/content/paginas/terapia-gingival.yml
+    fields:
+    - name: titulo
+      label: Título de la página (pestaña del navegador y Google)
+      widget: string
+    - name: descripcion
+      label: Descripción para Google y redes sociales
+      widget: text
+    - name: bloques
+      label: Contenido (en el orden en que aparece en la página)
+      widget: object
+      fields:
+      - name: imagen_1
+        label: Imagen 1 · pexels-meruyert-gonullu-7500155-scaled.jpg
+        widget: object
+        collapsed: true
+        fields:
+        - name: imagen
+          label: Imagen
+          widget: image
+        - name: alt
+          label: Texto alternativo (describe la imagen; vacío si es decorativa)
+          widget: string
+          required: false
+      - name: texto_1
+        label: Texto 1 · Terapia Gingival
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_2
+        label: Texto 2 · En Clínica Dental Dharma, combinamos de manera e…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_3
+        label: Texto 3 · Detén hoy el avance de la enfermedad de tus encí…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+  - name: estudio-de-la-oclusion-dental
+    label: Estudio de la oclusión dental
+    file: src/content/paginas/estudio-de-la-oclusion-dental.yml
+    fields:
+    - name: titulo
+      label: Título de la página (pestaña del navegador y Google)
+      widget: string
+    - name: descripcion
+      label: Descripción para Google y redes sociales
+      widget: text
+    - name: bloques
+      label: Contenido (en el orden en que aparece en la página)
+      widget: object
+      fields:
+      - name: imagen_1
+        label: Imagen 1 · dharma-16Dharma_17.1.jpg
+        widget: object
+        collapsed: true
+        fields:
+        - name: imagen
+          label: Imagen
+          widget: image
+        - name: alt
+          label: Texto alternativo (describe la imagen; vacío si es decorativa)
+          widget: string
+          required: false
+      - name: texto_1
+        label: Texto 1 · Estudio de la oclusión dental
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_2
+        label: Texto 2 · Realizamos un estudio postural para asegurar un …
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_3
+        label: Texto 3 · Funcionalidad y estética Este estudio incluye un…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: imagen_2
+        label: Imagen 2 · Prueba-Dharma.jpg
+        widget: object
+        collapsed: true
+        fields:
+        - name: imagen
+          label: Imagen
+          widget: image
+        - name: alt
+          label: Texto alternativo (describe la imagen; vacío si es decorativa)
+          widget: string
+          required: false
+  - name: diseno-de-sonrisas-conscientes
+    label: Diseño de Sonrisas Conscientes
+    file: src/content/paginas/diseno-de-sonrisas-conscientes.yml
+    fields:
+    - name: titulo
+      label: Título de la página (pestaña del navegador y Google)
+      widget: string
+    - name: descripcion
+      label: Descripción para Google y redes sociales
+      widget: text
+    - name: bloques
+      label: Contenido (en el orden en que aparece en la página)
+      widget: object
+      fields:
+      - name: imagen_1
+        label: Imagen 1 · pexels-tomaz-barcellos-999425-1987301-1-scaled.jpg
+        widget: object
+        collapsed: true
+        fields:
+        - name: imagen
+          label: Imagen
+          widget: image
+        - name: alt
+          label: Texto alternativo (describe la imagen; vacío si es decorativa)
+          widget: string
+          required: false
+      - name: texto_1
+        label: Texto 1 · Diseño de Sonrisas Conscientes
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_2
+        label: Texto 2 · El diseño de sonrisas conscientes es un estudio …
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_3
+        label: Texto 3 · El diseño de sonrisa consciente no solo se enfoc…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+  - name: coaching-dental-holistico
+    label: Coaching Dental Holístico
+    file: src/content/paginas/coaching-dental-holistico.yml
+    fields:
+    - name: titulo
+      label: Título de la página (pestaña del navegador y Google)
+      widget: string
+    - name: descripcion
+      label: Descripción para Google y redes sociales
+      widget: text
+    - name: bloques
+      label: Contenido (en el orden en que aparece en la página)
+      widget: object
+      fields:
+      - name: imagen_1
+        label: Imagen 1 · pexels-pavel-danilyuk-7220904-scaled.jpg
+        widget: object
+        collapsed: true
+        fields:
+        - name: imagen
+          label: Imagen
+          widget: image
+        - name: alt
+          label: Texto alternativo (describe la imagen; vacío si es decorativa)
+          widget: string
+          required: false
+      - name: texto_1
+        label: Texto 1 · Coaching Dental Holístico
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_2
+        label: Texto 2 · Nuestras sesiones de Coaching Dental están diseñ…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_3
+        label: Texto 3 · Nuestro experimentado equipo asesor de salud tra…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_4
+        label: Texto 4 · Beneficios
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+      - name: texto_5
+        label: Texto 5 · En resumen, el coaching dental holístico es un e…
+        widget: object
+        collapsed: true
+        fields:
+        - name: texto
+          label: Texto
+          widget: richtext
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          editor_components: []
+        - name: alineacion
+          label: Alineación
+          widget: select
+          required: false
+          options:
+          - label: Izquierda
+            value: izquierda
+          - label: Centro
+            value: centro
+- name: ajustes
+  label: Datos de la clínica
+  icon: store
+  files:
+  - name: clinica
+    label: Contacto, horario y redes
+    file: src/content/ajustes/clinica.yml
+    fields:
+    - name: direccion
+      label: Dirección (una línea por renglón)
+      widget: text
+    - name: horario
+      label: Horario (pie de página y bloque «Horario» de todas las páginas)
+      widget: list
+      summary: '{{fields.dias}}: {{fields.horas}}'
+      fields:
+      - name: dias
+        label: Días
+        widget: string
+      - name: horas
+        label: Horas
+        widget: string
+    - name: email
+      label: Email
+      widget: string
+    - name: telefono
+      label: Teléfono fijo
+      widget: string
+    - name: whatsapp
+      label: WhatsApp (número sin prefijo +34)
+      widget: string
+    - name: facebook
+      label: Facebook (enlace)
+      widget: string
+    - name: instagram
+      label: Instagram (enlace)
+      widget: string
+    - name: copyright
+      label: Texto de copyright
+      widget: string
