@@ -2,9 +2,9 @@
 # marcas {{...}} de src/plantillas/<página>.html.
 backend:
   name: github
-  repo: gofio-design/clinicadentaldharma-static
+  repo: gofio-design/clinicadentaldharma-cms
   branch: main
-site_url: https://gofio-design.github.io/clinicadentaldharma-static/
+site_url: https://gofio-design.github.io/clinicadentaldharma-cms/
 app_title: Clínica Dental Dharma
 media_folder: public/wp-content/uploads
 public_folder: /wp-content/uploads

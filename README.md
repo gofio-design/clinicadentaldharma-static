@@ -4,9 +4,9 @@ Web de [clinicadentaldharma.com](https://clinicadentaldharma.com) hecha con [Ast
 
 ## Editar la web
 
-1. Entra en **`/admin/`** de la web publicada (por ejemplo `https://gofio-design.github.io/clinicadentaldharma-static/admin/`).
+1. Entra en **`/admin/`** de la web publicada (por ejemplo `https://gofio-design.github.io/clinicadentaldharma-cms/admin/`).
 2. Inicia sesión con una de estas opciones:
-   - **Sign In Using Access Token**: pega un *token* de GitHub con permiso de escritura en este repositorio (GitHub → Settings → Developer settings → Fine-grained tokens → acceso a `clinicadentaldharma-static` con *Contents: Read and write*).
+   - **Sign In Using Access Token**: pega un *token* de GitHub con permiso de escritura en este repositorio (GitHub → Settings → Developer settings → Fine-grained tokens → acceso a `clinicadentaldharma-cms` con *Contents: Read and write*).
    - **Work with Local Repository** (Chrome o Edge): elige la carpeta del repositorio clonado en tu ordenador; los cambios se guardan en tus archivos y luego haces commit y push.
 3. En **Páginas** está cada página con su título y descripción para Google y sus bloques de contenido en el orden en que aparecen (textos, imágenes, botones y tarjetas). En **Datos de la clínica** están la dirección, el horario, el teléfono, el WhatsApp, el email y las redes, que se usan en el pie y en el bloque «Horario» de todas las páginas.
 4. Al guardar, el CMS hace un commit en `main` y GitHub Actions vuelve a publicar la web en uno o dos minutos.
@@ -21,7 +21,7 @@ Las imágenes nuevas se suben a `public/wp-content/uploads/` y la biblioteca de 
 - `src/lib/render.ts`: rellena las plantillas con el contenido al compilar.
 - `public/`: CSS, JS, fuentes (`fonts/`, Fontsource, licencia OFL), imágenes y vídeo, `robots.txt`, `sitemap.xml` y el editor (`admin/`).
 
-Los enlaces son relativos, así que la web funciona igual en GitHub Pages (`/clinicadentaldharma-static/`) y en el dominio propio.
+Los enlaces son relativos, así que la web funciona igual en GitHub Pages (`/clinicadentaldharma-cms/`) y en el dominio propio.
 
 Para añadir un bloque editable nuevo: pon una marca en la plantilla (`{{md:texto_N}}`, `{{cms:clave.campo}}`, `{{src:imagen_N.imagen}}` o `{{href:boton_N.enlace}}`), añade el valor en el `.yml` de la página y el campo en `public/admin/config.yml`.
 
