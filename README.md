@@ -12,6 +12,8 @@ Copia estática de [clinicadentaldharma.com](https://clinicadentaldharma.com), s
 - Vídeo de portada recomprimido (de 94 MB a 4 MB, sin audio porque se reproduce silenciado).
 - `sitemap.xml` y `robots.txt` nuevos. Se mantienen las metas SEO de Yoast (title, description, Open Graph, JSON-LD) con la URL canónica del dominio real.
 
+Las fuentes (Merriweather, Lato, Crimson Text, Inter, Poppins, Cousine) están alojadas en `fonts/` (Fontsource, licencia OFL), sin llamadas a Google Fonts.
+
 Se conservan el selector de idioma (GTranslate), el mapa de Google y el enlace de cita de Calendly, que dependen de servicios externos.
 
 ## Publicar
